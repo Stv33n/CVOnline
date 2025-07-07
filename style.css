@@ -1,0 +1,97 @@
+/*definindo variaveis para as cores que utilizarei no restante do codigo */
+:root {
+  --cor-fundo: #669bbc;
+  --cor-primaria: #003049;
+  --cor-destaque: #780000;
+  --cor-texto: #003049;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+}
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 5px 10px;
+  position: sticky; /* Mantendo o menu sempre visivel*/
+  top: 0;
+  z-index: 1000;
+}
+
+html {
+  scroll-padding-top: 130px; /* usei essa codigo para header nao sobrepor o main */
+}
+
+/* estilizando o menu de maneira que os links da sessoes fiquem centralizados*/
+nav ul {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--cor-destaque);
+}
+h1, h2 {
+  color: var(--cor-primaria);
+}
+
+section {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: var(--cor-destaque);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #217dbb;
+}
+
+footer{
+    text-align: center;
+    background-color: #003049;
+    color: #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
